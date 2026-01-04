@@ -1,0 +1,13 @@
+name = "Power Coils"
+filename = "powercoils-1.21.1-neoforge-1.0.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/6PRpcdaA/versions/Uqy3D04T/powercoils-1.21.1-neoforge-1.0.4.jar"
+hash-format = "sha512"
+hash = "dd5735472b2e75fdab8bcc83b2f0bfab5c0483eec7a3dc6708772f33ae3385db99070c192dd4e99e4a75ef944e0581fd2ac7ea09aa516bf02852d7a8e29602c2"
+
+[update]
+[update.modrinth]
+mod-id = "6PRpcdaA"
+version = "Uqy3D04T"

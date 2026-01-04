@@ -1,0 +1,13 @@
+name = "Jurodedu Neoforged"
+author = "Formuna"
+version = "3.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "6006c8f4dba4373b6a145b15f5cd40210e0fada98433288046ebca49d92e801a"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.217"

@@ -1,0 +1,13 @@
+name = "Veil Origins"
+filename = "veil_origins_mod-1.0.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/GZpP2Z67/versions/xJDpMZYi/veil_origins_mod-1.0.4.jar"
+hash-format = "sha512"
+hash = "1b416f6ac71b1ada7e8b783eacb00602c8d78109a3e00faf72a10d3af7fdf3113bc90fbb5e50ab7be1cd0f75d391acbeb867b24c9a88fce38c2977be36ff4228"
+
+[update]
+[update.modrinth]
+mod-id = "GZpP2Z67"
+version = "xJDpMZYi"
