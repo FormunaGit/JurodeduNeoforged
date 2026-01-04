@@ -26,6 +26,12 @@ jobs:
          with:
           url: https://nightly.link/packwiz/packwiz/workflows/go/main/Linux%2064-bit%20x86.zip
           target-path: .
+       - name: Export to packwiz
+         run: |
+           chmod +x ./packwiz
+           pushd Packwiz/1.21.1
+           ../../packwiz modrinth export -o ../../Fabulously.Optimized-${GITHUB_REF_NAME}.mrpack
+           popd
        - name: Attest mrpack
          id: attest-mrpack
          uses: actions/attest-build-provenance@977bb373ede98d70efdf65b84cb5f73e068dcc2a # 3.0.0
