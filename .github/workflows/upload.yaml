@@ -30,7 +30,7 @@ jobs:
          run: |
            chmod +x ./packwiz
            pushd Packwiz/1.21.1
-           ../../packwiz modrinth export -o ../../Fabulously.Optimized-${GITHUB_REF_NAME}.mrpack
+           ../../packwiz modrinth export -o ../../Jurodedu-Neoforged-${GITHUB_REF_NAME}.mrpack
            popd
        - name: Attest mrpack
          id: attest-mrpack
