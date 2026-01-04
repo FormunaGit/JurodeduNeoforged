@@ -1,0 +1,45 @@
+# totally not partially copied from anybody 👀👀 thx to @Fabulously-Optimized on GitHub
+name: Build and upload to GitHub
+
+on:
+  push:
+    types: [published]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment: github-actions
+    permissions:
+      id-token: write
+      attestations: write
+      contents: write
+    steps:
+       - name: Checkout Repository
+         uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # 6.0.0
+         with:
+           persist-credentials: false
+       - name: Download packwiz
+         uses: "valitydev/action-download-file@v1"
+         with:
+          url: https://nightly.link/packwiz/packwiz/workflows/go/main/Linux%2064-bit%20x86.zip
+          target-path: .
+       - name: Attest mrpack
+         id: attest-mrpack
+         uses: actions/attest-build-provenance@977bb373ede98d70efdf65b84cb5f73e068dcc2a # 3.0.0
+         with:
+          subject-path: Jurodedu-Neoforged-${{ github.ref_name }}.mrpack
+       - name: Copy and zip attestation
+         run: |
+           cp ${STEPS_ATTEST_MRPACK_OUTPUTS_BUNDLE_PATH} cosign-bundle.json
+           zip cosign-bundle.zip cosign-bundle.json
+         env:
+           STEPS_ATTEST_MRPACK_OUTPUTS_BUNDLE_PATH: ${{ steps.attest-mrpack.outputs.bundle-path }}
+       - name: Upload to Github
+         uses: Shopify/upload-to-release@c77c9b3e5d288adaef98a7007bf92340ec6ce03b # 2.0.0
+         with:
+           name: Jurodedu-Neoforged-${{ github.ref_name }}.mrpack
+           path: Jurodedu-Neoforged-${{ github.ref_name }}.mrpack
+           repo-token: ${{ secrets.GITHUB_TOKEN }}
