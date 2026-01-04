@@ -32,17 +32,7 @@ jobs:
        - name: Export to packwiz
          run: |
            $(go env GOPATH)/bin/packwiz modrinth export -o ../../Jurodedu-Neoforged-${GITHUB_REF_NAME}.mrpack
-       - name: Attest mrpack
-         id: attest-mrpack
-         uses: actions/attest-build-provenance@977bb373ede98d70efdf65b84cb5f73e068dcc2a # 3.0.0
-         with:
-          subject-path: Jurodedu-Neoforged-${{ github.ref_name }}.mrpack
-       - name: Copy and zip attestation
-         run: |
-           cp ${STEPS_ATTEST_MRPACK_OUTPUTS_BUNDLE_PATH} cosign-bundle.json
-           zip cosign-bundle.zip cosign-bundle.json
-         env:
-           STEPS_ATTEST_MRPACK_OUTPUTS_BUNDLE_PATH: ${{ steps.attest-mrpack.outputs.bundle-path }}
+       
        - name: Upload to Github
          uses: Shopify/upload-to-release@c77c9b3e5d288adaef98a7007bf92340ec6ce03b # 2.0.0
          with:
