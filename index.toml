@@ -240,6 +240,11 @@ hash = "7b8e8af83e8583adc91b2d859e5355f1bd0516a346d2584b8b01c004467d18af"
 metafile = true
 
 [[files]]
+file = "mods/login-security-panda.pw.toml"
+hash = "1a222ce2be928bd4740f3eb9ac2214aed9618e0d9dd0a8e4662a7bcacfe12b04"
+metafile = true
+
+[[files]]
 file = "mods/mod-menu-(neoforge-edition).pw.toml"
 hash = "1a17dcb130a85f5fe951e5187d6e4ffcfcbf7e5c6bf9f6ccb453431c0692143e"
 metafile = true
