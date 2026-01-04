@@ -21,11 +21,14 @@ jobs:
          uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # 6.0.0
          with:
            persist-credentials: false
-       - name: Download packwiz
-         uses: "valitydev/action-download-file@v1"
+       - name: Install Golang
+         uses: actions/setup-go@v5
          with:
-          url: https://nightly.link/packwiz/packwiz/workflows/go/main/Linux%2064-bit%20x86.zip
-          target-path: .
+           go-version: 'stable'
+
+       - name: Install packwiz
+         run: go install github.com/packwiz/packwiz@latest
+         
        - name: Export to packwiz
          run: |
            chmod +x ./packwiz
