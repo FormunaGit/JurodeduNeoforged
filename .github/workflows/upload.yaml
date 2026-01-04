@@ -31,10 +31,7 @@ jobs:
          
        - name: Export to packwiz
          run: |
-           chmod +x ./packwiz
-           pushd Packwiz/1.21.1
-           ../../packwiz modrinth export -o ../../Jurodedu-Neoforged-${GITHUB_REF_NAME}.mrpack
-           popd
+           $(go env GOPATH)/bin/packwiz modrinth export -o ../../Jurodedu-Neoforged-${GITHUB_REF_NAME}.mrpack
        - name: Attest mrpack
          id: attest-mrpack
          uses: actions/attest-build-provenance@977bb373ede98d70efdf65b84cb5f73e068dcc2a # 3.0.0
