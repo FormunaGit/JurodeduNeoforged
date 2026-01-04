@@ -2,9 +2,8 @@
 name: Build and upload to GitHub
 
 on:
-  push:
+  release:
     types: [published]
-
   workflow_dispatch:
 
 jobs:
@@ -13,29 +12,29 @@ jobs:
     timeout-minutes: 30
     environment: github-actions
     permissions:
-      id-token: write
-      attestations: write
       contents: write
+    
     steps:
-       - name: Checkout Repository
-         uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # 6.0.0
-         with:
-           persist-credentials: false
-       - name: Install Golang
-         uses: actions/setup-go@v5
-         with:
-           go-version: 'stable'
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
-       - name: Install packwiz
-         run: go install github.com/packwiz/packwiz@latest
-         
-       - name: Export to packwiz
-         run: |
-           $(go env GOPATH)/bin/packwiz modrinth export -o ../../Jurodedu-Neoforged-${GITHUB_REF_NAME}.mrpack
-       
-       - name: Upload to Github
-         uses: Shopify/upload-to-release@c77c9b3e5d288adaef98a7007bf92340ec6ce03b # 2.0.0
-         with:
-           name: Jurodedu-Neoforged-${{ github.ref_name }}.mrpack
-           path: Jurodedu-Neoforged-${{ github.ref_name }}.mrpack
-           repo-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install Golang
+        uses: actions/setup-go@v5
+        with:
+          go-version: 'stable'
+
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+        
+      - name: Export to packwiz
+        run: |
+          $(go env GOPATH)/bin/packwiz modrinth export -o Jurodedu-Neoforged-${{ github.ref_name }}.mrpack
+      
+      - name: Upload to Github Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: Jurodedu-Neoforged-${{ github.ref_name }}.mrpack
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
