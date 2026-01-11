@@ -2,9 +2,9 @@
 name: Build and upload to GitHub
 
 on:
-  release:
-    types: [published]
-  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
 
 jobs:
   build:
