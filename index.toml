@@ -379,11 +379,6 @@ hash = "15962183bec2468058c70e87aa32e902a08489b0f86741088cdc9aa958ba4931"
 metafile = true
 
 [[files]]
-file = "mods/veil-origins.pw.toml"
-hash = "c7927765ae33e90557055194e12fa3ee7370ad7275e7cd60fa5ce20502460bb4"
-metafile = true
-
-[[files]]
 file = "mods/visuality-forge.pw.toml"
 hash = "e58928e10c503de8a82e8de066d7f17e96a1e67d7bc452386dac8695a48874fc"
 metafile = true
