@@ -304,6 +304,11 @@ hash = "e48323d394418af426fa5bf31910e9a182734a6350a4f1c521bc4cb2733be4db"
 metafile = true
 
 [[files]]
+file = "mods/owo-lib.pw.toml"
+hash = "46831c04077a06df823bcd0f254833a90a9a9ccc78f5069f4b4c27fa301ac0cf"
+metafile = true
+
+[[files]]
 file = "mods/power-coils.pw.toml"
 hash = "482b8b16480c9cf038ad1ee4ed7ffdc52914cc9e27b27bb47de1ecfb0d470557"
 metafile = true
@@ -376,6 +381,11 @@ metafile = true
 [[files]]
 file = "mods/terrablender.pw.toml"
 hash = "15962183bec2468058c70e87aa32e902a08489b0f86741088cdc9aa958ba4931"
+metafile = true
+
+[[files]]
+file = "mods/vinurl.pw.toml"
+hash = "25a26ea69e0f58ae30dd8fc280eaf3a94ac427aa098850a056a688dbabe632f4"
 metafile = true
 
 [[files]]
