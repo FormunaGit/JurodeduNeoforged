@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".github/workflows/upload.yaml"
+hash = "2929babe855d279f938880df40e68a9ad3ca053d638d7bff0a42aa0139154736"
+
+[[files]]
 file = "README.md"
 hash = "f27ece5a3a15f1387d24876ca614f39a665d24f7181821d31c54132d9c4a72c0"
 
@@ -11,7 +15,7 @@ metafile = true
 
 [[files]]
 file = "mods/amendments.pw.toml"
-hash = "ed544632f7925bd625ac4297ae797be46a2ae0fcaad9eecf893cd78093eda4d0"
+hash = "ab17eef29211153f05939d62c8ec6c36171c4e4003e7aa34ade1605f7bcb0940"
 metafile = true
 
 [[files]]
@@ -216,7 +220,7 @@ metafile = true
 
 [[files]]
 file = "mods/jade.pw.toml"
-hash = "e7d3f7e0472ba9a3ef946fa5defcb157e4126636e603c2306d4ad6065936d5e2"
+hash = "62cd07874e73d82b29ff6fecd5345ce4b1135ce7ff29f3ef695139be33157483"
 metafile = true
 
 [[files]]
@@ -261,7 +265,7 @@ metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-hash = "d8e50f6f8d06a69381f1435d7d4bbf218e7896d8325bcf2bcd62f295714a0591"
+hash = "801662811550d6ce015b0c13667e24ce767c4ef244685658f961ac4ea9140ad7"
 metafile = true
 
 [[files]]
@@ -325,6 +329,11 @@ hash = "c0b066684294c33972d562e0cb08ea17b2d31bcf86cd1d6c63b8e968f0eac7a2"
 metafile = true
 
 [[files]]
+file = "mods/simple-voice-chat.pw.toml"
+hash = "09248b2991edcad1048358a25ca198e15d2d7cfccd4f2bfc1d1c3b0c5b8fd6ff"
+metafile = true
+
+[[files]]
 file = "mods/skinrestorer.pw.toml"
 hash = "eaf856a42e2afd5a97d67d0358b5d0eb9f40b80b57baf01ebaed9539596a4885"
 metafile = true
@@ -371,7 +380,7 @@ metafile = true
 
 [[files]]
 file = "mods/veil-origins.pw.toml"
-hash = "14e9d8ec067f60b54f03d5e9d1e298761fcb49b23ee57bc2f3d4547b77d940f7"
+hash = "c7927765ae33e90557055194e12fa3ee7370ad7275e7cd60fa5ce20502460bb4"
 metafile = true
 
 [[files]]
