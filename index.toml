@@ -99,13 +99,38 @@ hash = "2e082857985c7550efdad38a1997b9805051b07fb61b0cd30921e786a8521130"
 metafile = true
 
 [[files]]
+file = "mods/copycats.pw.toml"
+hash = "e002fab16a9b9ef0a35844030339612a38d3c58b0b93e97a34eb43ddc9108be7"
+metafile = true
+
+[[files]]
 file = "mods/coroutil.pw.toml"
 hash = "d901f874a1e09747b8d0d072c38c426eceead1f29c8ba36680f8f0082996b152"
 metafile = true
 
 [[files]]
+file = "mods/create-copper-zinc.pw.toml"
+hash = "6585dd3b5e5827ef7a154c6f6a42b261fce089bfffe430c13e8c7df2e22f9c0f"
+metafile = true
+
+[[files]]
 file = "mods/create-deco.pw.toml"
 hash = "b6a96c5ca32349b73df3dc7f91083d2b365c0065f8022fee7020f3ae39900888"
+metafile = true
+
+[[files]]
+file = "mods/create-dragons-plus.pw.toml"
+hash = "1363456107dacc8202a7bfcea93622fa81d04570f77d4075146b3b4bc9bbeac8"
+metafile = true
+
+[[files]]
+file = "mods/create-enchantment-industry.pw.toml"
+hash = "5b1281a4c0766f71f72db9721090403e47893d23d7f8c05907b522d6d9188542"
+metafile = true
+
+[[files]]
+file = "mods/create-food.pw.toml"
+hash = "454072507dc56ece74014ba744a5619f0ba135b44d89148caf28e8a909201ff8"
 metafile = true
 
 [[files]]
@@ -116,6 +141,11 @@ metafile = true
 [[files]]
 file = "mods/create.pw.toml"
 hash = "9da22561c3a5e45beb91121518a49f2e8a62bedb332574ce43a9d9b287ebc705"
+metafile = true
+
+[[files]]
+file = "mods/createaddition.pw.toml"
+hash = "b5bbbdef134fb735d4a741ccb85b46c6b1707e8e974a09bdcc1dcd785c0f172e"
 metafile = true
 
 [[files]]
@@ -174,6 +204,11 @@ hash = "e5125f8f2709fd20f8182fade3d7f9e7129872c63f042c5489c6eba4733b6b49"
 metafile = true
 
 [[files]]
+file = "mods/farmers-delight.pw.toml"
+hash = "b75ba223cc0d159d38890b0c5db42e9454210f874dd0d0b9060f8277e803a5d8"
+metafile = true
+
+[[files]]
 file = "mods/fast-ip-ping.pw.toml"
 hash = "9db6b697952d190c3c3fc6024f74713d74a808e5ec85c1adfd3e23ca769cd588"
 metafile = true
@@ -201,6 +236,11 @@ metafile = true
 [[files]]
 file = "mods/handcrafted.pw.toml"
 hash = "0004feab868f7b873c12db05aae0d0dac6c87b497490b48bb66480e7c8d0f340"
+metafile = true
+
+[[files]]
+file = "mods/hypertube.pw.toml"
+hash = "590367627beaf24a765bac0b3970b278d242045ef095a848dfba0615ab449bae"
 metafile = true
 
 [[files]]
