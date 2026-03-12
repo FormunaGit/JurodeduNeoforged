@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = ".github/workflows/upload.yaml"
-hash = "2929babe855d279f938880df40e68a9ad3ca053d638d7bff0a42aa0139154736"
+hash = "7e5ed5854378e671713b64c9c91caa0606c9969d1dd7cbb829391099a0d90fa9"
 
 [[files]]
 file = "README.md"
@@ -136,6 +136,11 @@ metafile = true
 [[files]]
 file = "mods/create-new-age.pw.toml"
 hash = "85048cc2c3269c990d551c6ebe5058662087ea5eb89e9da9ade81e3637654934"
+metafile = true
+
+[[files]]
+file = "mods/create-sophisticated-backpacks-compat.pw.toml"
+hash = "79d7cf09cdc88b8e64cb684be60efe938193ee13d8a64fc31e3ad1ae622bf4af"
 metafile = true
 
 [[files]]
@@ -406,6 +411,21 @@ metafile = true
 [[files]]
 file = "mods/sodium.pw.toml"
 hash = "0281ed9713f3141bdac363056a791845510e14761ea65b4b2813cf96d664b20a"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-backpacks-create-integration.pw.toml"
+hash = "98894c50922dfad36e4313d798d4497a61c42ce855b44fd63aea79b4990cac5d"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-backpacks.pw.toml"
+hash = "3cc8a6b4f0caa73eb00a018bd15f2359b1d801cf46d25c7654135c38c73ce009"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-core.pw.toml"
+hash = "81b72e93f7c7f2c5c80ee6b4a9d118a71c715054a79cba636412d789a77e7d1a"
 metafile = true
 
 [[files]]
