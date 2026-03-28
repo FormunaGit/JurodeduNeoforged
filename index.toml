@@ -219,11 +219,6 @@ hash = "9db6b697952d190c3c3fc6024f74713d74a808e5ec85c1adfd3e23ca769cd588"
 metafile = true
 
 [[files]]
-file = "mods/fastquit-forge.pw.toml"
-hash = "574e4be5a4194cf6a44a5d064e3734dfbaac911c3caebfdf722ed7c35ff5215e"
-metafile = true
-
-[[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "73360e397134d238ee8fd21d33fd7f9275e9441f74f8f1b6ed92278877c0b9f1"
 metafile = true
@@ -266,11 +261,6 @@ metafile = true
 [[files]]
 file = "mods/journeymap.pw.toml"
 hash = "f02e5550698b383daa2e55effc88f77ae6ca4a4e9c457b22439c4d049c3bbe33"
-metafile = true
-
-[[files]]
-file = "mods/krypton-foxified.pw.toml"
-hash = "b843ce75c788f0720b6e23d9021ce55d37415d72802ee60d95bd2fc5809ba96c"
 metafile = true
 
 [[files]]
