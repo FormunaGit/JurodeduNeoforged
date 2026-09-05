@@ -1,0 +1,13 @@
+name = "Unique Potions By Blond"
+filename = "Unique Potions By Blond 26.3 - 1.14 - 1.2.6.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/X8ITp3OI/versions/VwoVYDeI/Unique%20Potions%20By%20Blond%2026.3%20-%201.14%20-%201.2.6.zip"
+hash-format = "sha512"
+hash = "70ce9d0279cc473c874135d8bd943f98ca40971d45bdfc49e92e8e27a1b53852727c7a1bc24d442783de2cef6ef77d213a5687c46c76da7992e35a3a288241ce"
+
+[update]
+[update.modrinth]
+mod-id = "X8ITp3OI"
+version = "VwoVYDeI"
